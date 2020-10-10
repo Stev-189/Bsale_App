@@ -30,10 +30,16 @@ const router = app => {
     // Display a single product by ID
     app.get('/product/:id', (request, response) => {
         const id = request.params.id;
-
         pool.query('SELECT * FROM product WHERE id = ?', id, (error, result) => {
             if (error) throw error;
+            response.send(result);
+        });
+    });
 
+    app.get('/product/text/:name', (request, response) => {
+        const name = `%${request.params.name}%`;
+        pool.query('SELECT * FROM product WHERE name LIKE ?', name, (error, result) => {
+            if (error) throw error;
             response.send(result);
         });
     });

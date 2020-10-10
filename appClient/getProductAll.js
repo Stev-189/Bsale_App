@@ -1,4 +1,4 @@
-import { renderCategory, renderProduct } from "./render_data.js";
+import { renderCategory, renderProduct , search } from "./render_data.js";
 
 export async function getProductAll(url,type){
   await fetch(url)
@@ -9,3 +9,4 @@ export async function getProductAll(url,type){
   })
   .catch(err=>console.log(err))
 }
+
