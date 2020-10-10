@@ -31,6 +31,27 @@ export function renderProduct(elRender){
   });
 }
 
-export function search(){
+export function search(elRender){
   $limpiar()
+  $spaceRender.insertAdjacentHTML('beforeend',
+    `<div id="unico" class="productContainer">
+      <h3>Resultados</h3>
+      <div id="DC"class="innerDiv">
+      </div>
+      </div>
+    `
+    )
+  elRender.forEach(e=>{
+    let des=`Des ${e.discount}%`,
+        img=e.url_image
+    let $container=document.querySelector(`#DC`)
+    if(e.discount===0) des=``;
+    if(e.url_image==='') img='asset/no-disponible.png'
+    $container.insertAdjacentHTML('beforeend',
+    ` <figure class="card ${e.name}" id="P${e.id}">
+          <img src="${img}" alt="${e.name}">
+          <figcaption>${e.name} <br>$${e.price} ${des}</figcaption>
+        </figure>` 
+    )
+  })
 }

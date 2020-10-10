@@ -35,7 +35,7 @@ const router = app => {
             response.send(result);
         });
     });
-
+    
     app.get('/product/text/:name', (request, response) => {
         const name = `%${request.params.name}%`;
         pool.query('SELECT * FROM product WHERE name LIKE ?', name, (error, result) => {
@@ -43,6 +43,15 @@ const router = app => {
             response.send(result);
         });
     });
+////////
+    app.get('/product/category/:category', (request, response) => {
+        const category = request.params.category;
+        pool.query('SELECT * FROM product WHERE category = ?', category, (error, result) => {
+            if (error) throw error;
+            response.send(result);
+        });
+    });
+////////////
 }
 
 // Export the router

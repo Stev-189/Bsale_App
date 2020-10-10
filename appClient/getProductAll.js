@@ -10,3 +10,9 @@ export async function getProductAll(url,type){
   .catch(err=>console.log(err))
 }
 
+export async function getSearch(url){
+  await fetch(url)
+  .then(res=>res.json())
+  .then(data=>{search(data)})
+  .catch(err=>console.log(err))
+}
