@@ -1,0 +1,17 @@
+{
+  "name": "code-your-first-api-with-nodejs-and-express-connect-a-database-master",
+  "version": "1.0.0",
+  "description": "In this tutorial, we're going to set up a MySQL database to store all the data, connect to the database from our Node.js app, and allow the API to use the GET, POST, PUT, and DELETE methods to create a complete API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,50 @@
+
+:root{
+--fColor      :#04724D;
+--cH1         :#F4F4F9;
+--s2BGC       :#586F7C;/* #B8DBD9 */
+--s1BGC       :#B8DBD9;/* #586F7C */
+}
+body {
+  background-color: var(--s2BGC);
+}
+body, body *{
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+/* --------------------------------------------------------------------////////// header \\\\\\\\\\*/
+header{
+  background-color: var(--fColor);
+  width: 100vw;
+  height: 60px;
+  text-align: center;
+  color: var(--cH1);
+  padding-top: 20px;
+}
+
+header h1 {
+  margin: o auto;
+}
+#inputSearch{
+  width: 80vw;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--s1BGC);
+}
+#search{
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  width: 40vw;
+}
+#spaceRender{
+  /* border: solid 2px red; */
+  height: 76vh;
+  background-color: var(--s1BGC);
+  width: 80vw;
+  opacity: 0.9;
+}
