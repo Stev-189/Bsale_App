@@ -1,7 +1,7 @@
 Codigo Backend Node.js implementado de:
 
-[published url]: http://code.tutsplus.com/tutorials/code-your-first-api-with-nodejs-and-express-connect-a-database--cms-31699
-[instructor url]: https://tutsplus.com/authors/tania-rascia
+http://code.tutsplus.com/tutorials/code-your-first-api-with-nodejs-and-express-connect-a-database--cms-31699
+https://tutsplus.com/authors/tania-rascia
 
 Se realizo modificaciones para adaptarlo al proyecto, ademas de integrar node cors.
 Para iniciar proyecto, inicar en terminal node app.js, para extraer datos desde Mysql y ejecutar APP y acontinuacion  Index.html. 
