@@ -1,5 +1,5 @@
 import { renderCategory, renderProduct , search } from "./render_data.js";
-
+ //SI todo esta bien render
 export async function getProductAll(url,type){
   await fetch(url)
   .then(res=>res.json())
@@ -9,7 +9,7 @@ export async function getProductAll(url,type){
   })
   .catch(err=>console.log(err))
 }
-
+//para busqueda o categoria se render solo un row
 export async function getSearch(url){
   await fetch(url)
   .then(res=>res.json())

@@ -1,12 +1,14 @@
-
 :root{
---fColor      :#04724D;
---cH1         :#F4F4F9;
---s2BGC       :#586F7C;/* #B8DBD9 */
---s1BGC       :#B8DBD9;/* #586F7C */
+--fColor      :#003459;
+--FontComunt  :#00171F;
+--s2BGC       :#007EA7;/* #B8DBD9 */
+--BFColor     :#FFFFFF;/* #586F7C */
+--header-fig  :#00A7E1;
 }
+
 body {
   background-color: var(--s2BGC);
+  color:var(--FontComunt);
 }
 body, body *{
   margin: 0 auto;
@@ -19,32 +21,43 @@ header{
   width: 100vw;
   height: 60px;
   text-align: center;
-  color: var(--cH1);
+  color: var(--FontComunt);
   padding-top: 20px;
 }
 
 header h1 {
   margin: o auto;
+  color:var(--BFColor) ;
 }
 #inputSearch{
   width: 80vw;
   height: 80px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0 auto;
   align-items: center;
-  background-color: var(--s1BGC);
+  background-color: var(--header-fig);
+  padding: 1px;
 }
 #search{
-  margin: 0 auto;
   text-align: center;
   height: 40px;
   width: 40vw;
 }
+#btnSearch{
+  text-align: center;
+  height: 40px;
+  width: 80px;
+}
+#catSelect{
+  text-align: center;
+  height: 40px;
+  width: 200px;
+}
+/* --------------------------------------------------------------------////////// Space Render \\\\\\\\\\*/
 #spaceRender{
   /* border: solid 2px red; */
   height: 76vh;
-  background-color: var(--s1BGC);
+  background-color: var(--BFColor);
   width: 80vw;
   opacity: 0.9;
   overflow: auto;
@@ -75,7 +88,7 @@ header h1 {
   width: 200px;
   overflow: hidden;
   position: relative;
-  background-color:var(--cH1);
+  background-color:var(--BFColor);
 }
 .card img{
   display: block;
@@ -86,8 +99,8 @@ header h1 {
 }
 .card figcaption{
   text-align: center;
-  background-color: var(--s2BGC);
-  color:var(--cH1);
+  background-color: var(--header-fig);
+  color:var(--FontComunt);
   margin:0;
   border:none;
   position: absolute;

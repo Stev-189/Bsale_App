@@ -1,13 +1,14 @@
-# Envato Tuts+ Tutorial: [Code Your First API With Node.js and Express: Connect a Database][published url]
-## Instructor: [Tania Rascia][instructor url]
-
-In this tutorial, we're going to set up a MySQL database to store all the data, connect to the database from our Node.js app, and allow the API to use the GET, POST, PUT, and DELETE methods to create a complete API.
-
-------
-
-These are source files for the Envato Tuts+ tutorial: [Code Your First API With Node.js and Express: Connect a Database][published url]
-
-Available on [Envato Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
+Codigo Backend Node.js implementado de:
 
 [published url]: http://code.tutsplus.com/tutorials/code-your-first-api-with-nodejs-and-express-connect-a-database--cms-31699
 [instructor url]: https://tutsplus.com/authors/tania-rascia
+
+Se realizo modificaciones para adaptarlo al proyecto, ademas de integrar node cors.
+Para iniciar proyecto, inicar en terminal node app.js, para extraer datos desde Mysql y ejecutar APP y acontinuacion  Index.html. 
+Se trato de cumplir la mayor cantidad de requerimientos, pero primera vez que veo backend, aprendi algo nuevo con este trabajo, estare agradecido si pueden entregar algun feedback para mejorar, Muchas gracia.-
+
+Resumen:
+1.- Terminal: 'node app.js' (ejecuta app para traer datos de MySql)
+2.- index.html
+
+PD: cualquier duda o consulta epavezllanca@gmail.com, Muchas gracias.-
